@@ -38,6 +38,30 @@
                 <a href="https://rhodlib.com" target="_blank" rel="noreferrer">Website</a><!--External links-->
             </nav>
         </header>
+        <dialog id="dialog">
+            <h1>This is a modal</h1>
+            <iframe 
+                style="width: 100%; aspect-ratio: 16/9;"
+                src="https://www.youtube.com/embed/zQA-vg43H48?si=GqgZ6Ogg-dKHeuqi" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen
+            ></iframe>
+            <p>and this is native!</p>
+            <button id="hide">Close</button>
+        </dialog>
+
+        <button id="show">Moriohh cho radioooo!</button>
+        
+        <script>
+            window.show.addEventListener("click", () => {
+                window.dialog.showModal()
+            })
+            window.hide.addEventListener("click", () => {
+                window.dialog.close()
+            })
+        </script>
 
         <main>
 
@@ -82,6 +106,7 @@
                 <article>
                     <header>
                         <h4>Corporative Website</h4>
+                        <img width="700" loading="lazy" src="./images/froppysoft.png" alt="Screenshot from froppysoft website corporative by rhodlib">
                     </header>
                     <p>
                         Develop of a website with a simple interface to show
@@ -94,6 +119,7 @@
                 <article>
                     <header>
                         <h4>Personal Website</h4>
+                        <img width="700" loading="lazy" src="./images/rhodlibwebsite.png" alt="Screenshot from rhodlib personal website and blog">
                     </header>
                     <p>
                         My personal website to share social network and some blogposts.
@@ -105,14 +131,29 @@
                 <article>
                     <header>
                         <h4>Web Calculator</h4>
+                        <img width="700" loading="lazy" src="./images/jscalculator.png " alt="Screenshot from JSCalculator a calculator online made by rhodlib">
                     </header>
                     <p>
-                        A basic calculator to improve knowledge about HTML, CSS and JavaScript
+                        A basic calculator to improve knowledge about HTML, CSS and JavaScript and neumorphic styles
                     </p>
                     <footer>
                         <small>Used Technologies: HTMLS, CSS, JavaScript</small>
                     </footer>
                 </article>
+            </section>
+
+            <section>
+                <h2>FAQ</h2>
+
+                <details>
+                    <summary>What studies do you have?</summary>
+                    <p>I studied in an institute called TECLAB a technician degree for about 2years</p>
+                </details>
+
+                <details>
+                    <summary>Do you have hobbies?</summary>
+                    <p>I like play videogames, and play the bass guitar</p>
+                </details>
             </section>
 
             <section>
@@ -135,8 +176,16 @@
                             <option value="2">Ask</option>
                             <option value="3">More info</option>
                         </select>
+                        <label>Do you accept terms and conditions? <input type="checkbox" name="terms" required></label>
+                        <datalist id="languages">
+                            <option value="JavaScript"></option>
+                            <option value="Python"></option>
+                        </datalist>
+                        <label>
+                            <input list="languages" name="languages">
+                        </label>
                     </fieldset>
-                    <input type="submit" value="Send form">
+                    <button>Send form</button>
                 </form>
             </section>
         </main>
