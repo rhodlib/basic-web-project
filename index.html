@@ -5,28 +5,149 @@
         <meta charset="utf-8"> <!-- Codification -->
         <meta name="viewport" content="width=divice-width"> <!-- Width of the device  -->
         <title>Rhodlib</title> <!-- Title of the page in the tabbar, usefull for browser -->
+        
+        <!-- SEO -->
         <meta name="robots" content="index, follow"><!-- Meta for indexing the site -->
         <meta name="theme-color" content="#09f"><!-- Meta for some browsers -->
         <link rel="icon" type="image/jpg" href="./images/rhodlib.jpg"><!-- favicon -->
         <meta name="description" content=">3+ Years of experience as Web Developer. Working with React, ReactNative and Django."><!-- description for SEO -->
+        <link rel="alternate" href="https://rhodlib.com/en" hreflang="es-GB">
+        <link rel="canonical" href="https://rhodlib.com">
+        <!-- SEO -->
+
+        <!-- OPEN GRAPH -->
+        <meta property="og:title" content="Rhodlib Web developer">
+        <meta property="og:description" content="3+ years of experience in web development">
+        <meta property="og:image" content="/images/rhodlib.jpg">
+        <meta property="og:image:alt" content="Rhodlib photo looking at front with glasses">
+        <!-- Open graph is a configuration for share content -->
+        <!-- OPEN GRAPH -->
+
+        <style>
+            body {
+                background-color: rgb(191, 157, 223);
+            }
+        </style>
     </head>
     <body>
-        <h1>@Rhodlib Portfolio</h1>
-        
-        <p>3+ Years of experience as <strong>Web Developer</strong>. Working with React, ReactNative and Django.</p>
-        
-        <h2>Experience</h2>
-        
-        <ul>
-            <li>Datcom S.A - 2020 - Present</li>
-        </ul>
-        
-        <img 
-            title="rhodlib photo" 
-            width="400" 
-            src="./images/rhodlib.jpg" alt="rhodlib personal photo looking at front with glasses"
-        >
-        
-        <br>
+        <header>
+            <h1>@Rhodlib Portfolio</h1>
+            <nav>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a><!--Internal links-->
+                <a href="https://rhodlib.com" target="_blank" rel="noreferrer">Website</a><!--External links-->
+            </nav>
+        </header>
+
+        <main>
+
+            <p>3+ Years of experience as <strong>Web Developer</strong>. Working with React, ReactNative and Django.</p>
+            
+            <h2 id="experience">Experience</h2>
+            
+            <ul>
+                <li>Datcom S.A - 2020 - Present</li>
+            </ul>
+            
+            <a download href="./images/rhodlib.jpg">
+                <img 
+                    title="rhodlib photo" 
+                    width="400" 
+                    src="./images/rhodlib.jpg" alt="rhodlib personal photo looking at front with glasses"
+                >
+            </a>
+            
+            <br>
+    
+            <h2 id="projects">Projects</h2>
+    
+            <aside>
+                <header>
+                    <h3>My <span>favorite</span> Technologies</h3>
+                </header>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Node.js</li>
+                </ul>
+            </aside>
+
+            <button>
+                Click here
+            </button>
+    
+            <section>
+                <article>
+                    <header>
+                        <h4>Corporative Website</h4>
+                    </header>
+                    <p>
+                        Develop of a website with a simple interface to show
+                        some information about the company.
+                    </p>
+                    <footer>
+                        <small>Used Technologies: Astro, HTML, CSS</small>
+                    </footer>
+                </article>
+                <article>
+                    <header>
+                        <h4>Personal Website</h4>
+                    </header>
+                    <p>
+                        My personal website to share social network and some blogposts.
+                    </p>
+                    <footer>
+                        <small>Used Technologies: Astro, HTMLS, CSS, JavaScript</small>
+                    </footer>
+                </article>
+                <article>
+                    <header>
+                        <h4>Web Calculator</h4>
+                    </header>
+                    <p>
+                        A basic calculator to improve knowledge about HTML, CSS and JavaScript
+                    </p>
+                    <footer>
+                        <small>Used Technologies: HTMLS, CSS, JavaScript</small>
+                    </footer>
+                </article>
+            </section>
+
+            <section>
+                <h2>Contact me</h2>
+                <form method="post" action="/">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <label>Name: <input type="text" name="name" placeholder="Rodolfo talibs" required></label>
+                        <label>Email: <input type="email" name="email" placeholder="rhodlib@gmail.com" required></label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Aditional Information</legend>
+                        <label>Phone: <input type="tel" name="phone" placeholder="+54 222 653234" required pattern="[0-9]{9}"></label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Others</legend>
+                        <label for="why">Why do you want to contact: </label>
+                        <select name="why" id="why">
+                            <option value="1">Work</option>
+                            <option value="2">Ask</option>
+                            <option value="3">More info</option>
+                        </select>
+                    </fieldset>
+                    <input type="submit" value="Send form">
+                </form>
+            </section>
+        </main>
+        <footer>
+            Copyright 2023 - website handcrafted
+            <a href="mailto:rhodlib@gmail.com">
+                Send me an Email
+            </a>
+            <a href="tel:+5422250392888939">
+                Call me
+            </a>
+        </footer>
     </body>
 </html>

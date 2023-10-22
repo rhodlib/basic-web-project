@@ -20,6 +20,10 @@ all of the navigators, thanks to the [CSS Reset](https://meyerweb.com/eric/tools
 
 <!-- My Comment -->
 
+### Open Graph
+
+[Open Graph](https://ogp.me) is a configuration to show info on share.
+
 ### Title Tags
 
 <h1>....<h6>
