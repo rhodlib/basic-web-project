@@ -23,9 +23,46 @@
         <!-- Open graph is a configuration for share content -->
         <!-- OPEN GRAPH -->
 
+        <!-- CSS -->
         <style>
+            h1 {
+                color: blueviolet;
+
+            }
+
             body {
-                background-color: rgb(191, 157, 223);
+                background: rgb(223, 220, 252);
+                font-family: sans-serif;
+            }
+
+            .link {
+                color: red
+            }
+
+            .link:hover {
+                outline: 3px solid blueviolet;
+            }
+
+            .link:active {
+                outline: 3px solid blue;
+            }
+
+            #show {
+                background: blueviolet;
+                color: white;
+                border: 0;
+            }
+
+            input:focus {
+                outline: 1px solid blueviolet;
+            }
+
+            .description {
+                border: 1px solid blueviolet;
+            }
+
+            li:first-child {
+                color: pink
             }
         </style>
     </head>
@@ -33,9 +70,9 @@
         <header>
             <h1>@Rhodlib Portfolio</h1>
             <nav>
-                <a href="#experience">Experience</a>
-                <a href="#projects">Projects</a><!--Internal links-->
-                <a href="https://rhodlib.com" target="_blank" rel="noreferrer">Website</a><!--External links-->
+                <a class="link" href="#experience">Experience</a>
+                <a class="link" href="#projects">Projects</a><!--Internal links-->
+                <a class="link" href="https://rhodlib.com" target="_blank" rel="noreferrer">Website</a><!--External links-->
             </nav>
         </header>
         <dialog id="dialog">
@@ -49,7 +86,7 @@
                 allowfullscreen
             ></iframe>
             <p>and this is native!</p>
-            <button id="hide">Close</button>
+            <button id="show">Close</button>
         </dialog>
 
         <button id="show">Moriohh cho radioooo!</button>
@@ -65,7 +102,7 @@
 
         <main>
 
-            <p>3+ Years of experience as <strong>Web Developer</strong>. Working with React, ReactNative and Django.</p>
+            <p class="description">3+ Years of experience as <strong>Web Developer</strong>. Working with React, ReactNative and Django.</p>
             
             <h2 id="experience">Experience</h2>
             
@@ -113,7 +150,7 @@
                         some information about the company.
                     </p>
                     <footer>
-                        <small>Used Technologies: Astro, HTML, CSS</small>
+                        <small>Used Technologies: Astro, HTML5, CSS</small>
                     </footer>
                 </article>
                 <article>
@@ -125,7 +162,7 @@
                         My personal website to share social network and some blogposts.
                     </p>
                     <footer>
-                        <small>Used Technologies: Astro, HTMLS, CSS, JavaScript</small>
+                        <small>Used Technologies: Astro, HTML5, CSS, JavaScript</small>
                     </footer>
                 </article>
                 <article>
@@ -137,7 +174,7 @@
                         A basic calculator to improve knowledge about HTML, CSS and JavaScript and neumorphic styles
                     </p>
                     <footer>
-                        <small>Used Technologies: HTMLS, CSS, JavaScript</small>
+                        <small>Used Technologies: HTML5, CSS, JavaScript</small>
                     </footer>
                 </article>
             </section>
