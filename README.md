@@ -33,3 +33,17 @@ all of the navigators, thanks to the [CSS Reset](https://meyerweb.com/eric/tools
 ### Remplace Tags
 
 some tags are for reemplace and we dont need to close them, like (img, input, br...).
+
+
+## Cascade StyleSheet CSS
+
+(Specificity)[https://specificity.keegan.st/]
+
+### Units
+- px -> pixels -> Absolute unit (not really)
+- % -> Percentage -> Relative to father
+- vh -> viewport height
+- vw -> viewport width
+
+### box-sizing: border-box
+Property for no affect boxmodel using padding and border
